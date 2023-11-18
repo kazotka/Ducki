@@ -18,7 +18,9 @@
   "homepage": "https://github.com/kazotka/ducki#readme",
   "dependencies": {
     "discord.js": "^14.13.0",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "sequelize": "^6.35.0",
+    "sqlite3": "^5.1.6"
   },
   "devDependencies": {
     "eslint": "^8.53.0",
