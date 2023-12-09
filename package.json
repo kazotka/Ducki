@@ -4,7 +4,8 @@
   "description": "Ducki est un projet de développement basé sur l'API discord dans le but de créer un bot discord via la library publique de Discord.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -18,12 +19,10 @@
   "homepage": "https://github.com/kazotka/ducki#readme",
   "dependencies": {
     "discord.js": "^14.13.0",
-    "dotenv": "^16.3.1",
-    "sequelize": "^6.35.0",
-    "sqlite3": "^5.1.6"
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "eslint": "^8.53.0",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.2"
   }
 }
