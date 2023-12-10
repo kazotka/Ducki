@@ -15,8 +15,6 @@ module.exports = function eventsHandler(client) {
 
       event.once ? client.once(event.name, (...args) => event.execute(...args)) : client.on(event.name, (...args) => event.execute(...args));
 
-      console.log(`${eventFiles}, est chargé`);
     }
   }
-
 };
