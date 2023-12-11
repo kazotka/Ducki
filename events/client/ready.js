@@ -6,6 +6,6 @@ module.exports = {
   async execute(client) {
     await client.user.setStatus(process.env.status);
 
-    await console.log(`L'application c'est lancer avec ${client.user.username} !`);
+    await console.log(`🔧 L'application c'est lancer avec ${client.user.username} !`);
   },
 };
