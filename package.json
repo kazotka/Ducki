@@ -1,6 +1,6 @@
 {
   "name": "ducki",
-  "version": "1.0.3",
+  "version": "2.20",
   "description": "Ducki est un projet de développement basé sur l'API discord dans le but de créer un bot discord via la library publique de Discord.js",
   "main": "index.js",
   "scripts": {
