@@ -1,10 +1,12 @@
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
+  cooldown: 10,
   data: new SlashCommandBuilder()
     .setName('ping')
-    .setDescription('Replies with Pong!'),
+    .setDescription('Permet d\'afficher la latence de l\'application.'),
   async execute(interaction) {
-    await interaction.reply('🏓 Pong!');
+    const sent = await interaction.reply({ content: '🏓 Ping!', fetchReply: true });
+    interaction.editReply(`🏓 Pong : ${sent.createdTimestamp - interaction.createdTimestamp}ms !`);
   },
 };
