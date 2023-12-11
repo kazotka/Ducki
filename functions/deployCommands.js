@@ -28,7 +28,7 @@ module.exports = function deployCommands() {
       console.log(`🧩 Commence à rafraîchir les ${commands.length} (/) commandes d'application.`);
 
       const data = await rest.put(
-        Routes.applicationGuildCommands(process.env.clientId, process.env.guildId),
+        Routes.applicationCommands(process.env.clientId),
         { body: commands },
       );
 

@@ -15,7 +15,7 @@ module.exports = {
 
     const now = Date.now();
     const timestamps = cooldowns.get(command.data.name);
-    const defaultCooldownDuration = 3;
+    const defaultCooldownDuration = 5;
     const cooldownAmount = (command.cooldown ?? defaultCooldownDuration) * 1000;
 
     if (timestamps.has(interaction.user.id)) {
@@ -24,7 +24,7 @@ module.exports = {
       if (now < expirationTime) {
 
         const expiredTimestamp = Math.round(expirationTime / 1000);
-        return interaction.reply({ content: `❗Veuillez patienter, vous êtes en période de cooldowns pour ${command.data.name}. Vous pouvez l'utiliser à nouveau <t:${expiredTimestamp}:R>.`, ephemeral: true });
+        return interaction.reply({ content: `❗Veuillez patienter, vous êtes en période de cooldowns pour la commande \`/${command.data.name}\`. Vous pouvez l'utiliser à nouveau <t:${expiredTimestamp}:R>.`, ephemeral: true });
       }
     }
 
